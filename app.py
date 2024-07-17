@@ -2,9 +2,9 @@ import streamlit as st
 import pandas as pd 
 import time
 
-df = pd.read_excel('nutrition_table.xlsx', header=1)
-df = df[['Categoria', 'Alimento (100 g)', 'Carboidratos (g)', 'Proteínas (g)',
-       'Gorduras (g)', 'Índice Glicêmico', 'Calorias (kcal)']]
+df = pd.read_csv('nutrition_table.csv')
+# df = df[['Categoria', 'Alimento (100 g)', 'Carboidratos (g)', 'Proteínas (g)',
+#        'Gorduras (g)', 'Índice Glicêmico', 'Calorias (kcal)']]
 
 st.title("Calculo de Refeição")
 

@@ -1,0 +1,348 @@
+﻿Categoria,Alimento (100 g),Carboidratos (g),Proteínas (g),Gorduras (g),Índice Glicêmico,Calorias (kcal)
+Frutas,Banana-maçã,23,1.2,0.3,54,96
+Frutas,Banana-prata,22,1.1,0.2,50,89
+Frutas,Banana-nanica,23.5,1.3,0.4,58,92
+Frutas,Maçã (vermelha),13.8,0.3,0.2,36,52
+Frutas,Maçã (verde),13.6,0.3,0.2,39,52
+Frutas,Laranja,11.8,0.9,0.1,43,47
+Frutas,Manga (Tommy),15,0.8,0.4,51,60
+Frutas,Manga (Palmer),14.5,0.6,0.3,50,59
+Frutas,Abacaxi,13.1,0.5,0.1,59,50
+Frutas,Morango,7.7,0.7,0.3,40,32
+Frutas,Melancia,7.6,0.6,0.2,72,30
+Frutas,Uva (verde),17.2,0.7,0.2,59,69
+Frutas,Uva (roxa),16.5,0.6,0.2,55,67
+Frutas,Pera,15.2,0.4,0.1,38,57
+Frutas,Goiaba (branca),14.3,2.5,1,31,68
+Frutas,Goiaba (vermelha),14,2.6,0.9,30,67
+Frutas,Kiwi (verde),14.7,1.1,0.5,52,61
+Frutas,Kiwi (dourado),14.2,1,0.6,52,60
+Frutas,Mamão (formosa),10.7,0.5,0.2,60,43
+Frutas,Mamão (papaya),10.8,0.6,0.3,58,44
+Frutas,Acerola,7.7,0.4,0.3,22,32
+Frutas,Amora,9.6,1.4,0.5,25,43
+Frutas,Caju,11.8,0.9,0.2,28,46
+Frutas,Pêssego,9.5,0.9,0.3,42,39
+Frutas,Maracujá,13.5,2.2,0.5,30,97
+Frutas,Pitanga,8.4,1.1,0.3,35,40
+Frutas,Romã,18.7,1.7,1.2,35,83
+Frutas,Jabuticaba,15.3,0.6,0.3,24,58
+Frutas,Abacate,8.5,2,15.3,10,160
+Frutas,Caqui,18.6,0.6,0.2,50,81
+Frutas,Figo,19.2,0.8,0.3,61,74
+Frutas,Carambola,6.7,1,0.3,36,31
+Frutas,Lichia,16.5,0.8,0.4,50,66
+Frutas,Tangerina,13.3,0.8,0.3,42,53
+Frutas,Açaí,6.2,1.8,4.8,25,60
+Frutas,Melão,8.2,0.5,0.1,65,34
+Frutas,Nectarina,8.9,1.1,0.3,43,44
+Frutas,Marolo,23.5,2.7,0.7,37,96
+Frutas,Siriguela,19.3,0.8,0.2,48,74
+Frutas,Mangaba,14.8,1.2,0.5,41,63
+Frutas,Cambuci,5.9,0.4,0.1,30,25
+Frutas,Fruta-pão,27.1,1.1,0.2,50,103
+Frutas,Tamarindo,62.5,2.8,0.6,65,239
+Frutas,Nêspera,12.1,0.4,0.2,41,47
+Frutas,Cupuaçu,13.3,1.2,0.9,20,49
+Frutas,Bacuri,7.8,0.9,0.5,35,30
+Frutas,Pitaia,11,1.2,0.4,48,50
+Frutas,Rambutan,21,0.9,0.1,48,82
+Frutas,Pinha,25.2,2,0.6,54,101
+Frutas,Damasco,11.1,1.4,0.4,57,48
+Frutas,Damascos secos,62.6,3.4,0.5,31,241
+Frutas,Ameixa,11.4,0.7,0.3,39,46
+Frutas,Ameixa seca,63.9,2.2,0.4,29,240
+Frutas,Framboesa,11.9,1.2,0.7,26,52
+Frutas,Groselha,13.8,1.4,0.2,15,57
+Frutas,Mirtilo,14.5,0.7,0.3,25,57
+Frutas,Uva passa,79.2,3.4,0.5,64,299
+Frutas,Toranja,8.1,0.6,0.1,25,30
+Frutas,Abiu,21.6,0.6,0.4,45,93
+Frutas,Araçá,8.1,1,0.2,30,40
+Frutas,Bilimbi,8.9,0.8,0.6,20,30
+Frutas,Jenipapo,28.2,1,0.2,50,116
+Frutas,Limão (Tahiti),6.3,0.6,0.1,20,29
+Frutas,Limão (Siciliano),6.5,0.8,0.2,20,30
+Verduras,Alface,2.97,1.36,0.2,15,15
+Verduras,Cenoura,9.58,0.93,0.24,35,41
+Verduras,Brócolis,6.64,2.82,0.37,10,34
+Verduras,Tomate,3.89,0.88,0.2,30,18
+Verduras,Espinafre,3.63,2.86,0.39,15,23
+Verduras,Pepino,3.63,0.65,0.11,15,16
+Verduras,Beterraba,9.56,1.61,0.17,64,43
+Verduras,Couve,8.75,3.02,0.4,15,43
+Verduras,Abobrinha,3.11,1.21,0.32,15,17
+Verduras,Pimentão (verde),6.03,1.22,0.3,15,27
+Verduras,Pimentão (vermelho),4.7,1,0.3,15,26
+Verduras,Pimentão (amarelo),5.5,1.2,0.3,15,27
+Verduras,Berinjela,5.88,0.98,0.23,15,25
+Verduras,Abóbora,6.5,1,0.1,75,26
+Verduras,Quiabo,7.03,1.93,0.19,20,33
+Verduras,Acelga,3.74,1.8,0.17,15,19
+Verduras,Chuchu,4.51,0.82,0.13,15,19
+Verduras,Rúcula,3.65,2.58,0.66,15,25
+Verduras,Repolho (verde),5.8,1.28,0.1,15,25
+Verduras,Repolho (roxo),5.5,1.4,0.2,15,27
+Verduras,Alho,33.06,6.36,0.5,30,149
+Verduras,Cebola,9.34,1.1,0.1,10,40
+Verduras,Couve-flor,4.97,1.92,0.28,15,25
+Verduras,Rabanete,3.4,0.68,0.1,15,16
+Verduras,Salsão,3.65,0.69,0.17,15,16
+Verduras,Alcachofra,10.51,2.89,0.34,15,47
+Verduras,Endívia,3.35,1.25,0.2,15,17
+Verduras,Nabo,6.43,0.9,0.1,15,28
+Verduras,Palmito,3.6,1.68,0.3,15,18
+Verduras,Broto de bambu,5.2,2.6,0.3,15,27
+Verduras,Jiló,6.63,1.37,0.2,15,27
+Verduras,Broto de feijão,6.71,1.24,0.1,15,31
+Verduras,Funcho (erva-doce),7.29,1.24,0.2,15,31
+Verduras,Almeirão,3.35,1.5,0.3,15,17
+Verduras,Aipo,3,0.7,0.2,15,16
+Verduras,Aspargo,3.38,2.2,0.12,15,20
+Verduras,Agrião,2.26,2.3,0.1,15,11
+Verduras,Chicória,4.5,1.1,0.2,15,23
+Verduras,Escarola,3.65,1.6,0.2,15,17
+Verduras,Mostarda,4.68,2.86,0.42,15,27
+Verduras,Couve-chinesa,2.18,1.5,0.2,15,12
+Verduras,Couve-manteiga,8.75,3.02,0.4,15,43
+Verduras,Alho-poró,14.15,1.5,0.2,15,61
+Verduras,Ervilha (fresca),14.45,5.42,0.4,39,81
+Verduras,Abóbora japonesa,7,1,0.2,70,29
+Verduras,Ervilha-torta,9.6,2.8,0.4,32,42
+Verduras,Vagem,7.13,1.89,0.22,30,35
+Tubérculos,Batata inglesa,17.49,2.02,0.1,78,77
+Tubérculos,Batata-doce,20.12,1.57,0.05,63,86
+Tubérculos,Mandioca,38.06,1.36,0.28,72,159
+Tubérculos,Inhame,27.88,1.53,0.14,54,118
+Tubérculos,Cará,28.35,2,0.1,55,118
+Tubérculos,Nabo,6.43,0.9,0.1,15,28
+Tubérculos,Aipim,38.06,1.36,0.28,72,159
+Tubérculos,Jicama,8.82,0.72,0.1,35,38
+Tubérculos,Rabanete,3.4,0.68,0.1,15,16
+Tubérculos,Cenoura,9.58,0.93,0.24,35,41
+Tubérculos,Batata-doce roxa,24.14,1.61,0.15,63,102
+Tubérculos,Batata baroa,18.6,1.1,0.1,65,81
+Tubérculos,Tupinambo,17.44,2,0.1,50,73
+Tubérculos,Batata yacon,15.2,0.88,0.1,25,61
+Tubérculos,Raiz de taro,26.46,2,0.1,48,112
+Cereais,Arroz branco cozido,28.17,2.38,0.28,73,130
+Cereais,Arroz integral,23.51,2.56,1.04,50,111
+Cereais,Arroz selvagem,21.34,4,0.34,45,101
+Cereais,Arroz parboilizado,23.67,2.56,0.32,50,109
+Cereais,Aveia,66.27,16.89,6.9,55,389
+Cereais,Centeio,58.36,8.84,1.63,45,283
+Cereais,Cevada,73.48,12.48,1.61,25,354
+Cereais,Trigo,71.18,13.7,1.87,41,339
+Cereais,Trigo sarraceno,71.5,13.25,3.4,54,343
+Cereais,Quinoa,21.3,4.4,1.92,53,120
+Cereais,Amaranto,69.54,14.45,7.02,35,371
+Cereais,Milho,18.7,3.22,1.35,52,86
+Cereais,Farinha de milho,73,7.5,1.75,68,370
+Cereais,Sorgo,74.63,11.29,3.46,50,364
+Cereais,Teff,73.13,13.3,2.38,57,367
+Cereais,Espelta,66.27,14.57,2.43,55,361
+Cereais,Fonio,73.6,10.8,1.94,57,364
+Cereais,Farro,55.1,14.8,2.5,45,325
+Cereais,Millet,72.85,11.02,4.22,71,378
+Cereais,Arroz basmati,25.22,2.7,0.44,57,121
+Cereais,Arroz jasmine,27.8,2.9,0.5,68,129
+Cereais,Arroz vermelho,23.5,2.6,1.1,50,111
+Cereais,Arroz negro,34,8,2.5,42,200
+Cereais,Trigo integral,71.18,13.7,1.87,41,339
+Cereais,Trigo para quibe,69,12.5,1.5,47,340
+Cereais,Cuscuz marroquino,23.22,3.79,0.64,65,112
+Cereais,Polenta,73,7.5,1.75,68,370
+Cereais,Arroz arbório,28.73,2.36,0.33,69,130
+Cereais,Granola,64,9,6,50,400
+Cereais,Milharina,78,7,1,70,365
+Cereais,Farinha de trigo,76.31,10.33,1.27,85,366
+Cereais,Farinha de mandioca,88.69,1.23,0.3,80,358
+Cereais,Farinha de tapioca,88.1,0.4,0.2,70,350
+Cereais,Polvilho doce,87.9,0.7,0.2,85,351
+Cereais,Polvilho azedo,86.3,0.7,0.2,85,350
+Cereais,Farinha de arroz,80.1,5.95,0.55,95,360
+Cereais,Cereal matinal (milho),84,7,1,80,375
+Cereais,Aveia em flocos,66.27,16.89,6.9,55,389
+Cereais,Muesli,59,12,6,45,400
+Cereais,Pão integral,42,9,4,50,240
+Cereais,Pão de centeio,48,8.5,3,55,260
+Cereais,Farinha de centeio,64,8.5,1,60,300
+Cereais,Massa integral,66,13,2,50,350
+Cereais,Biscoito de arroz,80,8,1.5,85,370
+Cereais,Torrada integral,73,11,2,55,340
+Cereais,Mingau de aveia,12,2,1,60,70
+Carnes,Frango (peito),0,31.02,3.57,-,165
+Carnes,Frango (coxa),0,25,9,-,184
+Carnes,Frango (sobrecoxa),0,25,10,-,187
+Carnes,Frango (asa),0,23,13,-,210
+Carnes,Frango (carcaça),0,15,8,-,135
+Carnes,Carne bovina (patinho),0,28.01,9.28,-,218
+Carnes,Carne bovina (alcatra),0,27,9.5,-,217
+Carnes,Carne bovina (maminha),0,27,12,-,245
+Carnes,Carne bovina (picanha),0,21,18,-,285
+Carnes,Carne bovina (filé mignon),0,31,8,-,220
+Carnes,Carne bovina (contrafilé),0,25,20,-,290
+Carnes,Carne bovina (acém),0,22,15,-,245
+Carnes,Carne bovina (músculo),0,20,10,-,180
+Carnes,Carne bovina (coxão mole),0,28,6,-,185
+Carnes,Carne bovina (coxão duro),0,26,8,-,195
+Carnes,Carne bovina (cupim),0,20,30,-,360
+Carnes,Carne de porco (lombo),0,22.61,5.79,-,172
+Carnes,Carne de porco (pernil),0,21.15,13.35,-,235
+Carnes,Carne de porco (costela),0,19,20,-,290
+Carnes,Carne de porco (bacon),0,12,45,-,500
+Carnes,Carne de porco (panceta),0,15,35,-,400
+Carnes,Carne de porco (filet mignon),0,23,4,-,140
+Carnes,Carne de cordeiro (pernil),0,25,20,-,294
+Carnes,Carne de cordeiro (costela),0,20,30,-,340
+Carnes,Carne de cordeiro (lombo),0,27,15,-,255
+Carnes,Carne de cabrito (pernil),0,27,7,-,168
+Carnes,Carne de javali (lombo),0,21,3.5,-,122
+Carnes,Camarão,0,20.3,0.5,-,85
+Carnes,Siri,0,17,1.5,-,80
+Carnes,Lula,0,15.6,1.38,-,75
+Carnes,Mexilhão,0,12,2,-,72
+Carnes,Peixe (tilápia),0,20.08,2.31,-,96
+Carnes,Peixe (salmão),0,20.42,13.42,-,206
+Carnes,Peixe (atum),0,23,1,-,99
+Carnes,Peixe (bacalhau),0,24,0.4,-,105
+Carnes,Peixe (cavala),0,19,13.89,-,205
+Carnes,Peixe (robalo),0,20,0.9,-,91
+Carnes,Peixe (sardinha),0,20.86,11.45,-,208
+Carnes,Peixe (tambaqui),0,20,7,-,150
+Lácteos,Leite materno,7,1.3,4.2,35,70
+Lácteos,Leite integral,4.8,3.3,3.3,27,61
+Lácteos,Leite desnatado,4.9,3.4,0.1,27,36
+Lácteos,Leite semidesnatado,4.8,3.3,1.55,27,48
+Lácteos,Leite de cabra,4.45,3.56,4.14,30,69
+Lácteos,Leite de búfala,4.5,4.2,7.9,30,110
+Lácteos,Leite condensado,55.4,8,8,61,321
+Lácteos,Creme de leite,2.97,1.79,19.78,-,202
+Lácteos,Iogurte natural,4.66,4.1,3.25,36,63
+Lácteos,Iogurte grego,4,10,5,36,93
+Lácteos,Queijo mussarela,1.28,22.17,22.35,-,318
+Lácteos,Queijo parmesão,3.22,35.75,25.83,-,392
+Lácteos,Queijo prato,1,21.18,24.9,-,353
+Lácteos,Queijo minas frescal,3.8,17.6,15,-,273
+Lácteos,Queijo minas padrão,2.6,20.9,20,-,307
+Lácteos,Queijo cottage,3.38,11.1,4.3,-,98
+Lácteos,Queijo ricota,3,11,8,-,174
+Lácteos,Queijo cheddar,1.28,24.9,33.14,-,403
+Lácteos,Queijo brie,0.45,21,27.68,-,334
+Lácteos,Queijo camembert,0.46,19.8,24.26,-,300
+Lácteos,Queijo gorgonzola,2.34,21.4,28,-,353
+Lácteos,Queijo de cabra,2,21,25,-,320
+Lácteos,Requeijão,3.03,5.44,15.9,-,257
+Lácteos,Manteiga,0.06,0.85,81.11,-,717
+Lácteos,Creme de leite fresco,2.95,2.01,37,-,350
+Lácteos,Leite em pó integral,37.3,24,26.2,50,496
+Lácteos,Leite em pó desnatado,52,36,1,50,362
+Lácteos,Sorvete de creme,23.6,4,11,61,207
+Lácteos,Coalhada,4.7,4,3.5,35,61
+Outros,Ovo,1.12,12.56,9.51,-,143
+Outros,Clara de ovo,0.73,10.9,0.17,-,52
+Outros,Gema de ovo,3.59,15.86,26.54,-,322
+Outros,Pão branco,49,8,3,70,265
+Outros,Pão integral,42,9,4,50,240
+Outros,Pão de centeio,48,8.5,3,55,260
+Outros,Pão francês,51,8,1.5,75,267
+Outros,Bolo simples,56,5,12,65,352
+Outros,Bolo de chocolate,61,5,15,75,395
+Outros,Bolacha de água e sal,64,7,18,70,460
+Outros,Bolacha recheada,68,4,20,65,500
+Outros,Biscoito de polvilho,81,2,15,85,442
+Outros,Biscoito de maisena,73,6,18,60,442
+Outros,Biscoito de aveia,68,6,15,55,425
+Outros,Açúcar cristal,99.98,0,0,68,387
+Outros,Açúcar refinado,99.98,0,0,65,387
+Outros,Açúcar mascavo,98,0.2,0.1,55,380
+Outros,Mel,82.4,0.3,0,58,304
+Outros,Melaço,75,0,0.1,55,290
+Outros,Xarope de milho,76,0,0,90,300
+Outros,Geléia de frutas,65,0,0,60,250
+Outros,Chocolate ao leite,58.7,7.5,30.57,45,535
+Outros,Chocolate amargo,46.36,4.88,32.4,23,546
+Outros,Amêndoa,21.55,21.15,49.93,15,575
+Outros,Castanha-de-caju,30.19,18.22,43.85,22,574
+Outros,Noz,13.71,15.23,65.21,20,654
+Outros,Pistache,27.17,20.95,45.32,15,562
+Outros,Avelã,16.7,14.95,60.75,15,628
+Outros,Coco seco,23.65,3.33,33.49,45,370
+Outros,Castanha-do-pará,12.27,14.32,66.43,20,659
+Outros,Amendoim,16.13,25.8,49.66,15,567
+Outros,Chia,42.12,16.54,30.74,20,486
+Outros,Linhaça,28.88,18.29,42.16,20,534
+Sucos,Suco de laranja,10.4,0.7,0.2,50,45
+Sucos,Suco de maçã,11.5,0.1,0.1,41,46
+Sucos,Suco de uva,13.94,0.37,0.13,48,54
+Sucos,Suco de abacaxi,12.89,0.36,0.12,45,52
+Sucos,Suco de maracujá (1:3),6.23,0.42,0.4,30,33
+Sucos,Suco de manga,12.32,0.82,0.38,51,55
+Sucos,Suco de melancia,7.55,0.61,0.15,72,30
+Sucos,Suco de limão (1:3),6,0.6,0.2,20,25
+Sucos,Suco de acerola,7.69,0.4,0.3,22,32
+Sucos,Suco de goiaba,12,0.65,0.5,25,50
+Sucos,Suco de caju,11.76,0.91,0.2,28,46
+Sucos,Suco de morango,7.68,0.67,0.3,40,32
+Sucos,Suco de pera,15.23,0.38,0.12,38,57
+Sucos,Suco de tangerina,13.34,0.81,0.31,42,53
+Sucos,Suco de kiwi,14.66,1.14,0.52,52,61
+Sucos,Suco de melão,8.16,0.54,0.14,65,34
+Sucos,Suco de pêssego,9.54,0.91,0.25,42,39
+Sucos,Suco de acerola,6,0.4,0.3,22,32
+Sucos,Suco de amora,9.61,1.39,0.49,25,43
+Sucos,Suco de pitanga,8.44,1.1,0.3,35,40
+Sucos,Suco de romã,18.7,1.67,1.17,35,83
+Sucos,Suco de jabuticaba,15.3,0.6,0.3,24,58
+Sucos,Suco de abacate (1:2),8.53,2,15.32,10,160
+Bebidas,Cerveja (Pilsen),3.55,0.46,0,110,43
+Bebidas,Cerveja (Lager),3.6,0.5,0,110,44
+Bebidas,Cerveja (IPA),4,0.6,0,110,50
+Bebidas,Cerveja (Stout),4.5,0.8,0,110,55
+Bebidas,Cerveja (Trigo),3.8,0.5,0,110,45
+Bebidas,Vinho tinto seco,2.61,0.07,0,44,85
+Bebidas,Vinho tinto meio seco,3.2,0.1,0,44,95
+Bebidas,Vinho tinto doce,4,0.1,0,44,105
+Bebidas,Vinho branco seco,2.6,0.07,0,44,82
+Bebidas,Vinho branco meio seco,3.1,0.1,0,44,90
+Bebidas,Vinho branco doce,4,0.1,0,44,100
+Bebidas,Vinho de sobremesa,8,0.1,0,44,150
+Bebidas,Vinho rosé,3,0.1,0,44,90
+Bebidas,Cachaça,0,0,0,-,231
+Bebidas,Vodca,0,0,0,-,231
+Bebidas,Uísque,0,0,0,-,250
+Bebidas,Tequila,0,0,0,-,231
+Bebidas,Vinho espumante seco,2.6,0.07,0,44,81
+Bebidas,Vinho espumante doce,4,0.1,0,44,100
+Bebidas,Champanhe,2.6,0.07,0,44,81
+Bebidas,Saquê,5,0.07,0,-,134
+Bebidas,Rum,0,0,0,-,231
+Bebidas,Gin,0,0,0,-,231
+Bebidas,Cidra,6,0.1,0,50,50
+Bebidas,Vinho do Porto,10,0.1,0,44,160
+Bebidas,Vinho Moscatel,6,0.1,0,44,120
+Bebidas,Licor,15,0.1,0,50,180
+Leguminosas,Feijão carioca,14.16,8.86,0.83,34,123
+Leguminosas,Feijão preto,23.71,8.86,0.54,30,132
+Leguminosas,Feijão branco,21.5,9.6,0.5,35,128
+Leguminosas,Feijão vermelho,22.8,8.7,0.5,30,127
+Leguminosas,Feijão azuki,27.29,19.87,0.53,16,329
+Leguminosas,Feijão-de-corda,18.15,8.67,0.59,35,117
+Leguminosas,Feijão-fradinho,23.78,8.67,0.59,35,122
+Leguminosas,Feijão-mungo,19.15,23.86,0.6,25,142
+Leguminosas,Feijão-rajado,25.15,7.86,0.8,35,141
+Leguminosas,Feijão-roxinho,24.27,8.86,0.54,30,132
+Leguminosas,Lentilha,20.13,9.02,0.38,32,116
+Leguminosas,Grão-de-bico,27.42,8.86,2.59,30,164
+Leguminosas,Ervilha,14.45,5.42,0.4,39,81
+Leguminosas,Ervilha seca,55.24,24.55,1.16,32,341
+Leguminosas,Soja,30.16,36.49,19.94,15,446
+Leguminosas,Fava,19.7,7.6,0.4,25,110
+Leguminosas,Tremoço,12.42,4.45,1,25,60
+Leguminosas,Edamame,8.91,11.91,4,15,122
+Leguminosas,Lentilha vermelha,20.13,8.6,0.5,35,116
+Leguminosas,Feijão rosinha,20.8,8.5,1,25,127
+Leguminosas,Feijão jalo,22.3,8.7,1,35,130
+Leguminosas,Ervilha-torta,9.6,2.8,0.4,32,42
+Leguminosas,Grão-de-bico torrado,58.64,20.84,6.04,25,364
+Leguminosas,Soja preta,24.77,36.49,19.94,15,446
