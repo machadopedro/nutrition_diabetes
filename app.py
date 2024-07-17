@@ -2,10 +2,10 @@ import streamlit as st
 import pandas as pd 
 import time
 
+st.set_page_config(layout="wide")
 df = pd.read_csv('nutrition_table.csv')
 
 st.title("Calculo de Refeição")
-
 def click_button():
     refeicao = pd.DataFrame(
             columns=["Alimento", "Quantidade (g)", "Carboidratos líquidos (g)", "Proteínas (g)", "Gorduras (g)", "Calorias (kcal)", "Insulina UI"]
