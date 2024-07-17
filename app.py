@@ -24,10 +24,11 @@ if 'refeicao' not in st.session_state:
             columns=["Alimento", "Quantidade (g)", "Carboidratos (g)", "Proteínas (g)", "Gorduras (g)", "Calorias (kcal)", "Insulina UI"]
         )
     st.session_state.refeicao = refeicao
-
-final_df = pd.DataFrame(
-            columns=["Alimento", "Quantidade (g)", "Carboidratos (g)", "Proteínas (g)", "Gorduras (g)", "Calorias (kcal)", "Insulina UI"]
-        )
+if 'final_df' not in st.session_state:
+    final_df = pd.DataFrame(
+                columns=["Alimento", "Quantidade (g)", "Carboidratos (g)", "Proteínas (g)", "Gorduras (g)", "Calorias (kcal)", "Insulina UI"]
+            )
+    st.session_state.final_df = final_df
 if st.button('Adicionar Alimento'):
     st.session_state.clicked = False
     if st.session_state.quantidade <= 0:
@@ -46,23 +47,23 @@ if st.button('Adicionar Alimento'):
             "Insulina UI": peso * (alimento_infos['Carboidratos (g)']/10 + alimento_infos['Proteínas (g)']/50 + alimento_infos['Gorduras (g)']/100) * fator_correcao/70 * st.session_state.quantidade/100
         }
         st.session_state.refeicao = pd.concat([st.session_state.refeicao, pd.DataFrame(new_row)], ignore_index=True)
-        final_df = st.session_state.refeicao.copy()
+        st.session_state.final_df = st.session_state.refeicao.copy()
         soma = [{
             "Alimento": 'Total',
-            "Quantidade (g)": sum(final_df['Quantidade (g)']),
-            "Carboidratos (g)": sum(final_df['Carboidratos (g)']),
-            "Proteínas (g)": sum(final_df['Proteínas (g)']),
-            "Gorduras (g)": sum(final_df['Gorduras (g)']),
-            "Calorias (kcal)": sum(final_df['Calorias (kcal)']),
-            "Insulina UI": sum(final_df['Insulina UI'])
+            "Quantidade (g)": sum(st.session_state.final_df['Quantidade (g)']),
+            "Carboidratos (g)": sum(st.session_state.final_df['Carboidratos (g)']),
+            "Proteínas (g)": sum(st.session_state.final_df['Proteínas (g)']),
+            "Gorduras (g)": sum(st.session_state.final_df['Gorduras (g)']),
+            "Calorias (kcal)": sum(st.session_state.final_df['Calorias (kcal)']),
+            "Insulina UI": sum(st.session_state.final_df['Insulina UI'])
         }]
-        final_df = pd.concat([final_df, pd.DataFrame(soma)], ignore_index=True)
+        st.session_state.final_df = pd.concat([st.session_state.final_df, pd.DataFrame(soma)], ignore_index=True)
 st.subheader("Refeição")
-st.dataframe(final_df, hide_index=True, use_container_width=True, on_select="ignore")
+st.dataframe(st.session_state.final_df, hide_index=True, use_container_width=True, on_select="ignore")
 
 
 
-if len(final_df) > 0:
+if len(st.session_state.final_df) > 0:
     st.button('Nova refeição', on_click=click_button)
 
 if st.session_state.clicked:
