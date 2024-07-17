@@ -8,13 +8,15 @@ df = pd.read_csv('nutrition_table.csv')
 st.title("Calculo de Refeição")
 def click_button():
     refeicao = pd.DataFrame(
-            columns=["Alimento", "Quantidade (g)", "Carboidratos líquidos (g)", "Proteínas (g)", "Gorduras (g)", "Calorias (kcal)", "Insulina UI"]
+            columns=["Alimento", "Quantidade (g)", "Carboidratos líquidos (g)", "Proteínas (g)", "Gorduras (g)", "Calorias (kcal)", "Insulina (UI)"]
         )
     st.session_state.refeicao = refeicao
 
-peso = st.sidebar.number_input(label="Peso do paciente", value=70, key="peso")
+def update_refeicao():
+    st.session_state.refeicao['Insulina (UI)'] = st.session_state.peso * (st.session_state.refeicao['Carboidratos líquidos (g)']/10 + st.session_state.refeicao['Proteínas (g)']/50 + st.session_state.refeicao['Gorduras (g)']/100) * st.session_state.fator_correcao/70 * st.session_state.quantidade/100
+peso = st.sidebar.number_input(label="Peso do paciente", value=70, key="peso", on_change=update_refeicao)
 
-fator_correcao = st.sidebar.number_input(label="Fator de correção", value=1.0, step=0.1, key="fator_correcao")
+fator_correcao = st.sidebar.number_input(label="Fator de correção", value=1.0, step=0.1, key="fator_correcao", on_change=update_refeicao)
 
 st.selectbox("Busque alimento", df["Alimento (100 g)"], index=None, key="alimento_escolhido")
 
@@ -22,7 +24,7 @@ st.number_input(label="Quantidade (g)", value=100, step=10, key="quantidade")
 
 if 'refeicao' not in st.session_state:
     refeicao = pd.DataFrame(
-            columns=["Alimento", "Quantidade (g)", "Carboidratos líquidos (g)", "Proteínas (g)", "Gorduras (g)", "Calorias (kcal)", "Insulina UI"]
+            columns=["Alimento", "Quantidade (g)", "Carboidratos líquidos (g)", "Proteínas (g)", "Gorduras (g)", "Calorias (kcal)", "Insulina (UI)"]
         )
     st.session_state.refeicao = refeicao
 
@@ -40,7 +42,7 @@ if st.button('Adicionar Alimento'):
             "Proteínas (g)": alimento_infos['Proteínas (g)'] * st.session_state.quantidade/100,
             "Gorduras (g)": alimento_infos['Gorduras (g)'] * st.session_state.quantidade/100,
             "Calorias (kcal)": alimento_infos['Calorias (kcal)'] * st.session_state.quantidade/100,
-            "Insulina UI": st.session_state.peso * (alimento_infos['Carboidratos líquidos (g)']/10 + alimento_infos['Proteínas (g)']/50 + alimento_infos['Gorduras (g)']/100) * st.session_state.fator_correcao/70 * st.session_state.quantidade/100
+            "Insulina (UI)": st.session_state.peso * (alimento_infos['Carboidratos líquidos (g)']/10 + alimento_infos['Proteínas (g)']/50 + alimento_infos['Gorduras (g)']/100) * st.session_state.fator_correcao/70 * st.session_state.quantidade/100
         }
         # Remove the 'Total' row if it exists
         if 'Total' in st.session_state.refeicao['Alimento'].values:
@@ -55,7 +57,7 @@ if st.button('Adicionar Alimento'):
             st.session_state.refeicao.loc[matching_index, "Proteínas (g)"] += new_row["Proteínas (g)"].values[0]
             st.session_state.refeicao.loc[matching_index, "Gorduras (g)"] += new_row["Gorduras (g)"].values[0]
             st.session_state.refeicao.loc[matching_index, "Calorias (kcal)"] += new_row["Calorias (kcal)"].values[0]
-            st.session_state.refeicao.loc[matching_index, "Insulina UI"] += new_row["Insulina UI"].values[0]
+            st.session_state.refeicao.loc[matching_index, "Insulina (UI)"] += new_row["Insulina (UI)"].values[0]
         else:
             st.session_state.refeicao = pd.concat([st.session_state.refeicao, pd.DataFrame(new_row)], ignore_index=True)
 
@@ -66,7 +68,7 @@ if st.button('Adicionar Alimento'):
             "Proteínas (g)": sum(st.session_state.refeicao['Proteínas (g)']),
             "Gorduras (g)": sum(st.session_state.refeicao['Gorduras (g)']),
             "Calorias (kcal)": sum(st.session_state.refeicao['Calorias (kcal)']),
-            "Insulina UI": sum(st.session_state.refeicao['Insulina UI'])
+            "Insulina (UI)": sum(st.session_state.refeicao['Insulina (UI)'])
         }]
         # st.session_state.refeicao.loc['Total']= st.session_state.refeicao.sum(numeric_only=True, axis=0)
         st.session_state.refeicao = pd.concat([st.session_state.refeicao, pd.DataFrame(soma)], ignore_index=True)
@@ -82,7 +84,7 @@ def update():
     st.session_state.refeicao.loc[alimento_editado_index, "Proteínas (g)"] = alimento_infos['Proteínas (g)'].values[0] * quantidade/100
     st.session_state.refeicao.loc[alimento_editado_index, "Gorduras (g)"] = alimento_infos['Gorduras (g)'].values[0] * quantidade/100
     st.session_state.refeicao.loc[alimento_editado_index, "Calorias (kcal)"] = alimento_infos['Calorias (kcal)'].values[0] * quantidade/100
-    st.session_state.refeicao.loc[alimento_editado_index, "Insulina UI"] = st.session_state.peso * (alimento_infos['Carboidratos líquidos (g)'].values[0]/10 + alimento_infos['Proteínas (g)'].values[0]/50 + alimento_infos['Gorduras (g)'].values[0]/100) * st.session_state.fator_correcao/70 * quantidade/100
+    st.session_state.refeicao.loc[alimento_editado_index, "Insulina (UI)"] = st.session_state.peso * (alimento_infos['Carboidratos líquidos (g)'].values[0]/10 + alimento_infos['Proteínas (g)'].values[0]/50 + alimento_infos['Gorduras (g)'].values[0]/100) * st.session_state.fator_correcao/70 * quantidade/100
     st.session_state.refeicao.loc[alimento_editado_index, "Quantidade (g)"] = quantidade
     # Remove the 'Total' row if it exists
     if 'Total' in st.session_state.refeicao['Alimento'].values:
@@ -94,7 +96,7 @@ def update():
             "Proteínas (g)": sum(st.session_state.refeicao['Proteínas (g)']),
             "Gorduras (g)": sum(st.session_state.refeicao['Gorduras (g)']),
             "Calorias (kcal)": sum(st.session_state.refeicao['Calorias (kcal)']),
-            "Insulina UI": sum(st.session_state.refeicao['Insulina UI'])
+            "Insulina (UI)": sum(st.session_state.refeicao['Insulina (UI)'])
         }]
         # st.session_state.refeicao.loc['Total']= st.session_state.refeicao.sum(numeric_only=True, axis=0)
     st.session_state.refeicao = pd.concat([st.session_state.refeicao, pd.DataFrame(soma)], ignore_index=True)
