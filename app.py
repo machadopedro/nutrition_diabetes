@@ -8,7 +8,7 @@ df = pd.read_csv('nutrition_table.csv')
 
 st.title("Calculo de Refeição")
 if 'clicked' not in st.session_state:
-        st.session_state.clicked = False
+    st.session_state.clicked = False
 def click_button():
     st.session_state.clicked = True
 peso = st.sidebar.number_input(label="Peso do paciente", value=70, key="peso")
@@ -17,7 +17,7 @@ fator_correcao = st.sidebar.number_input(label="Fator de correção", value=1.0,
 
 st.selectbox("Busque alimento", df["Alimento (100 g)"], index=None, key="alimento_escolhido")
 
-quantidade = st.number_input(label="Quantidade (g)", value=100, key="quantidade")
+st.number_input(label="Quantidade (g)", value=100, key="quantidade")
 
 if 'refeicao' not in st.session_state:
     refeicao = pd.DataFrame(
@@ -30,7 +30,6 @@ if 'final_df' not in st.session_state:
             )
     st.session_state.final_df = final_df
 if st.button('Adicionar Alimento'):
-    st.session_state.clicked = False
     if st.session_state.quantidade <= 0:
         st.warning("Quantidade deve ser maior que 0", icon="⚠️")
     if st.session_state.alimento_escolhido is None:
@@ -71,6 +70,9 @@ if st.session_state.clicked:
             columns=["Alimento", "Quantidade (g)", "Carboidratos (g)", "Proteínas (g)", "Gorduras (g)", "Calorias (kcal)", "Insulina UI"]
         )
     st.session_state.refeicao = refeicao
+    st.session_state.final_df = refeicao.copy()
+    st.session_state.clicked = False
+    st.rerun()
 # text_search = st.text_input("Busque alimentos", value="")
 # alimento_processed = df["Alimento (100 g)"].str.normalize('NFKD').str.encode('ascii',errors='ignore').str.decode('utf-8').str.lower()
 # m1 = alimento_processed.str.contains(str.lower(text_search))
