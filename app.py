@@ -11,9 +11,9 @@ if 'clicked' not in st.session_state:
         st.session_state.clicked = False
 def click_button():
     st.session_state.clicked = True
-peso = st.sidebar.number_input(label="Peso", value=70, key="peso")
+peso = st.sidebar.number_input(label="Peso do paciente", value=70, key="peso")
 
-fator_correcao = st.sidebar.number_input(label="Fator de correção", value=1, key="fator_correcao")
+fator_correcao = st.sidebar.number_input(label="Fator de correção", value=1.0, step=0.1, key="fator_correcao")
 
 st.selectbox("Busque alimento", df["Alimento (100 g)"], index=None, key="alimento_escolhido")
 
