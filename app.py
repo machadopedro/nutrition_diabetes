@@ -18,7 +18,7 @@ fator_correcao = st.sidebar.number_input(label="Fator de correção", value=1.0,
 
 st.selectbox("Busque alimento", df["Alimento (100 g)"], index=None, key="alimento_escolhido")
 
-st.number_input(label="Quantidade (g)", value=100, key="quantidade")
+st.number_input(label="Quantidade (g)", value=100, step=10, key="quantidade")
 
 if 'refeicao' not in st.session_state:
     refeicao = pd.DataFrame(
