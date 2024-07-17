@@ -94,7 +94,7 @@ if st.session_state.clicked:
 
 
 st.header("Tabela Nutricional")
-event = st.dataframe(df.astype(str), selection_mode="single-row", hide_index=True, on_select="rerun",use_container_width=True,)
+event = st.dataframe(df.astype(str), hide_index=True, use_container_width=True,)
 
 # meal_df = pd.DataFrame(
 #             columns=["Alimento", "Quantidade (g)", "Carboidratos (g)", "Proteínas (g)", "Gorduras (g)", "Calorias (kcal)", "Insulina UI"]
