@@ -14,7 +14,7 @@ def nova_refeicao():
         st.session_state.refeicao_summary_lista = []
     total_refeicao = st.session_state.refeicao[st.session_state.refeicao['Alimento'] == 'Total']
     refeicao_summary = {
-        'Horário': time.strftime("%H:%M:%S"),
+        'Horário': time.strftime("%H:%M"),
         'Quantidade (g)': total_refeicao['Quantidade (g)'].values[0],
         'Carboidratos líquidos (g)': total_refeicao['Carboidratos líquidos (g)'].values[0],
         'Proteínas (g)': total_refeicao['Proteínas (g)'].values[0],
