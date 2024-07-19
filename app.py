@@ -6,11 +6,31 @@ st.set_page_config(layout="wide")
 df = pd.read_csv('nutrition_table.csv')
 
 st.title("Calculo de Refeição")
-def click_button():
+def nova_refeicao():
+    if 'refeicao_lista' not in st.session_state:
+        st.session_state.refeicao_lista = []
+    st.session_state.refeicao_lista.append(st.session_state.refeicao)
+    if 'refeicao_summary_lista' not in st.session_state:
+        st.session_state.refeicao_summary_lista = []
+    total_refeicao = st.session_state.refeicao[st.session_state.refeicao['Alimento'] == 'Total']
+    refeicao_summary = {
+        'Horário': time.strftime("%H:%M:%S"),
+        'Quantidade (g)': total_refeicao['Quantidade (g)'].values[0],
+        'Carboidratos líquidos (g)': total_refeicao['Carboidratos líquidos (g)'].values[0],
+        'Proteínas (g)': total_refeicao['Proteínas (g)'].values[0],
+        'Gorduras (g)': total_refeicao['Gorduras (g)'].values[0],
+        'Calorias (kcal)': total_refeicao['Calorias (kcal)'].values[0],
+        'Insulina (UI)': total_refeicao['Insulina (UI)'].values[0]
+    }
+    st.session_state.refeicao_summary_lista.append(refeicao_summary)
     refeicao = pd.DataFrame(
             columns=["Alimento", "Quantidade (g)", "Carboidratos líquidos (g)", "Proteínas (g)", "Gorduras (g)", "Calorias (kcal)", "Insulina (UI)"]
         )
     st.session_state.refeicao = refeicao
+
+def remove_refeicao():
+    st.session_state.refeicao_summary_lista.pop(st.session_state.check_meal['selection']['rows'][0])
+    st.session_state.refeicao_lista.pop(st.session_state.check_meal['selection']['rows'][0])
 
 def update_refeicao():
     st.session_state.refeicao['Insulina (UI)'] = st.session_state.peso * (st.session_state.refeicao['Carboidratos líquidos (g)']/10 + st.session_state.refeicao['Proteínas (g)']/50 + st.session_state.refeicao['Gorduras (g)']/100) * st.session_state.fator_correcao/70 * st.session_state.quantidade/100
@@ -62,7 +82,7 @@ if st.button('Adicionar Alimento'):
             st.session_state.refeicao = pd.concat([st.session_state.refeicao, pd.DataFrame(new_row)], ignore_index=True)
 
         soma = [{
-            "Alimento": 'Total',
+            "Alimento": "Total",
             "Quantidade (g)": sum(st.session_state.refeicao['Quantidade (g)']),
             "Carboidratos líquidos (g)": sum(st.session_state.refeicao['Carboidratos líquidos (g)']),
             "Proteínas (g)": sum(st.session_state.refeicao['Proteínas (g)']),
@@ -106,7 +126,18 @@ columns.remove('Quantidade (g)')
 st.data_editor(st.session_state.refeicao, hide_index=True, key='editor', on_change=update, use_container_width=True, disabled=set(columns))
 
 if len(st.session_state.refeicao) > 0:
-    st.button('Nova refeição', on_click=click_button)
+    st.button('Nova refeição', on_click=nova_refeicao)
+
+
+if ('refeicao_summary_lista' in st.session_state) and len(st.session_state.refeicao_summary_lista) > 0:
+    st.subheader("Historico de refeições")
+    check_meal = st.dataframe(pd.DataFrame(st.session_state.refeicao_summary_lista), key='check_meal', hide_index=True, use_container_width=True, selection_mode='single-row', on_select='rerun')
+
+    if len(check_meal['selection']['rows']) > 0:
+        st.markdown("**Detalhes**")
+        st.dataframe(pd.DataFrame(st.session_state.refeicao_lista[check_meal['selection']['rows'][0]]), hide_index=True, use_container_width=True)
+        st.button("Remover", type="primary", on_click=remove_refeicao)
+        
 
 st.header("Tabela Nutricional")
 event = st.dataframe(df.astype(str), hide_index=True, use_container_width=True,)
